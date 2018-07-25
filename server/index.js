@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, "./www")));
 app.use(express.static(path.join(__dirname, "./public")));
 
 
-const baseURL = process.env.NODE_ENV == 'production' ? '//luvxy.cn':'//localhost:3000' 
+const baseURL = process.env.NODE_ENV === 'development' ? '//localhost:3000' :'//luvxy.cn'
 app.use(function (req, res, next) {
     res.locals.baseURL = baseURL
     next();
