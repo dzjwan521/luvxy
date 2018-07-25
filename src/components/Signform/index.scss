@@ -1,0 +1,19 @@
+.signin-content{
+        padding: 40px 20px 35px;
+        .ant-form-item-label{
+            text-align: left;
+        }
+        .btn-submit{text-align: center}
+        
+        .avatar-uploader > .ant-upload {
+             position: relative;
+            transform: translateX(-50%);
+            margin-left: 50%;
+            width: 128px;
+            height: 128px;
+            img {
+               width: 128px;
+            height: 128px;
+            }
+            }
+}

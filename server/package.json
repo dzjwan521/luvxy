@@ -1,0 +1,48 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "Renewed shall be blade that was broken,The crownless again shall be king.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha test",
+        "start": "cross-env NODE_ENV=production && node index",
+        "dev": "cross-env NODE_ENV=development && supervisor index"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cheerio": "^1.0.0-rc.2",
+        "compression": "^1.7.2",
+        "config-lite": "^2.1.0",
+        "connect-flash": "^0.1.1",
+        "connect-mongo": "^2.0.0",
+        "express": "^4.16.2",
+        "express-formidable": "^1.0.0",
+        "express-session": "^1.15.6",
+        "express-winston": "^2.4.0",
+        "mditor": "^1.3.3",
+        "moment": "^2.19.2",
+        "mongolass": "^3.1.5",
+        "mongoose": "^5.1.3",
+        "normalize.css": "^7.0.0",
+        "objectid-to-timestamp": "^1.3.0",
+        "sha1": "^1.1.1",
+        "superagent": "^3.8.3",
+        "winston": "^2.4.0"
+    },
+    "devDependencies": {
+        "cors": "^2.8.4",
+        "cross-env": "^5.1.6",
+        "ejs": "^2.6.1",
+        "eslint": "^4.17.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "mocha": "^4.0.1",
+        "multer": "^1.3.0",
+        "supertest": "^3.0.0"
+    }
+}

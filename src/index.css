@@ -1,0 +1,36 @@
+@import '~antd/dist/antd.css';
+
+html,body{
+    
+    color: #4a4a4a;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    font-family: 'Montserrat-Regular', 'STYuanti-SC-Regular';
+    font-weight: 400 !important;
+}
+.ant-card{
+    font-family: 'Montserrat-Regular', 'STYuanti-SC-Regular';
+
+}
+.is-clearfix:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+div.ant-row,div.ant-row-flex{
+    width: 100%;
+}
+
+a{
+        color: #7a7a7a;
+         font-weight: 200;
+        transition: all .5s;
+    }
+a:hover{
+    color: #1f2d3d;
+}
+input:-webkit-autofill {
+	    box-shadow: 0 0 0px 1000px white inset !important;
+    }

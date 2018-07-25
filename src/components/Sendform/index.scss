@@ -1,0 +1,41 @@
+.send-content{
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding: 110px 10px 40px 10px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+   font-family: Monospaced Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+    @import url('~simplemde/dist/simplemde.min.css');
+    @import url('~highlight.js/styles/dracula.css');
+    
+    .form{
+        display: flex;
+        margin-bottom: 10px;
+        .form-lable{
+            width: 50px;
+        }
+        .form-item{
+            flex: 1;
+        }
+    }
+   .btn-send{
+       float: right;
+   }
+    code{
+        display: block;
+        overflow-x: auto;
+        padding: 0.5em;
+        background: #282a36;
+        color: #f8f8f2;
+        border-radius: 5px;
+    }
+    blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+    .fullscreen{
+        z-index: 10000;
+    }
+    
+}

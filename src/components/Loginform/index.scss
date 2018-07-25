@@ -1,0 +1,28 @@
+
+
+.login-page{
+    .login-content{
+        padding: 60px 20px 35px;
+        
+    }
+    p {
+        text-align: center;
+    }
+    .title.is-3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    p.welcome {
+        margin-bottom: 35px;
+    }
+    
+    #components-form-demo-normal-login .login-form {
+        max-width: 300px;
+    }
+    #components-form-demo-normal-login .login-form-forgot {
+        float: right;
+    }
+    #components-form-demo-normal-login .login-form-button {
+        width: 100%;
+    }
+}
