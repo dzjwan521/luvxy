@@ -22,6 +22,13 @@ router.post('/',(req,res,next)=>{
         password,
         phone
     }
+    if(email != '414603173@qq.com'){
+
+        res.json({
+            status: false,
+            msg: '目前禁止注册'
+        });
+    }
     userModel.create(user)
     .then(result=>{
         delete user.password
@@ -51,7 +58,7 @@ router.post('/uploads/avatar', upload.single('avatar'), function (req, res, next
     })
     console.log(req)
 
-    res.json({ imgUrl: res.locals.baseURL + '/imgs/' + req.file.filename});
+    res.json({ imgUrl:  res.locals.baseURL +'/imgs/' + req.file.filename});
 })
 
 module.exports = router
