@@ -3,6 +3,9 @@ import Header from '../../components/Header'
 import Content from '../../components/content'
 import Footer from '../../components/Footer'
 import $http from '../../commom/http'
+import { Spin, Icon } from 'antd';
+
+const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />;
 
 export default class Acticle extends Component {
     constructor(props){
@@ -28,7 +31,9 @@ export default class Acticle extends Component {
         return (
             <div className="acticle-page">
                 <Header />
-                <Content article={article}/>
+                <Spin spinning={!article} tip="Loading..." indicator={antIcon} >
+                    <Content article={article}/>
+                </Spin>,
                 <Footer />
             </div>
         )

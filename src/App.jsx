@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader'
 import { Provider } from "react-redux";
-import { Route, HashRouter as Router, Switch} from 'react-router-dom'
+import { Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import { BackTop } from 'antd';
 import List from "./pages/List/index";
 import Home from "./pages/Home/index";

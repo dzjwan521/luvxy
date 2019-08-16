@@ -51,14 +51,13 @@ router.post('/',(req,res,next)=>{
 })
 //上传
 router.post('/uploads/avatar', upload.single('avatar'), function (req, res, next) {
-    fs.rename(req.file.path, path.resolve(__dirname, '../public/imgs/' + req.file.filename), function (err) {
+    const name = `${req.file.filename}-${req.file.originalname}`
+    fs.rename(req.file.path, path.resolve(__dirname, '../public/avatar/',name), function (err) {
         if (err) {
             throw err;
         }
     })
-    console.log(req)
-
-    res.json({ imgUrl:  res.locals.baseURL +'/imgs/' + req.file.filename});
+    res.json({ imgUrl:  '/avatar/' + name});
 })
 
 module.exports = router

@@ -27,15 +27,9 @@ app.engine('.html', require('ejs').__express);
 app.set('view engine', 'html');
 
 // 设置静态文件目录
-app.use(express.static(path.join(__dirname, "./www")));
+// app.use(express.static(path.join(__dirname, "./uploads")));
 app.use(express.static(path.join(__dirname, "./public")));
 
-
-const baseURL = process.env.NODE_ENV === 'development' ? '//localhost:3000' :'//luvxy.cn'
-app.use(function (req, res, next) {
-    res.locals.baseURL = baseURL
-    next();
-});
 
 // 日志存储
 // 正常请求的日志

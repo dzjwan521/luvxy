@@ -17,6 +17,11 @@ module.exports={
             .update({ _id: id }, { $inc: { pv: 1 } })
             .exec()
     },
+    incLike:(id)=>{
+        return Article
+            .update({ _id: id }, { $inc: { like: 1 } })
+            .exec()
+    },
     getByObj:(obj)=>{
         let query = {};
         const kind = obj.kind;

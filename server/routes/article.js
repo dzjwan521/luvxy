@@ -34,7 +34,19 @@ router.post('/send', (req, res, next) => {
        
 })
 
-//根据文章id获取一篇文章
+router.get('/like/:id', function (req, res, next) {
+    const id = req.params.id
+    articleModel.incLike(id).then(function (result) {
+          
+                res.json({
+                    status: true,
+                    msg: "请求成功"
+                })
+          
+        })
+        .catch(next)
+})
+
 router.get('/:id', function (req, res, next) {
     const id = req.params.id
 

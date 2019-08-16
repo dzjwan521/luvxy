@@ -126,7 +126,8 @@ module.exports = {
             loader: require.resolve('eslint-loader'),
           },
         ],
-        include: paths.appSrc,
+            exclude: path.resolve(__dirname,'../src/components/markdown-navbar'),
+            include: paths.appSrc,
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -146,6 +147,7 @@ module.exports = {
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
+            exclude: path.resolve(__dirname,'../src/components/markdown-navbar'),
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {

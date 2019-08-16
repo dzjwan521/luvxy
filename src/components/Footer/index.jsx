@@ -18,7 +18,7 @@ export default class Footer extends Component {
                 <div className="column is-4 has-text-left">
                   <div className="top is-clearfix">
                     <a className="logo-link is-pulled-left" href="/">
-                      <img src={logo} style={{ width: "100px", height: "100px" }} alt="nodelover" />
+                      {/* <img src={logo} style={{ width: "100px", height: "100px" }} alt="nodelover" /> */}
                     </a>
                     <div className="site-info">
                       <h4 className="title is-4">Luvxy</h4>

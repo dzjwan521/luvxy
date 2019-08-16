@@ -34,7 +34,9 @@ exports.Article = mongolass.model('Article', {
     author: { type: Mongolass.Types.ObjectId, required: true },
     title: { type: 'string', required: true },
     content: { type: 'string', required: true },
+    // htmlContent: { type: 'string', required: true },
     type: { type: 'string', enum: ["front", "backend", "design",'other',]},
-    pv: { type: 'number', default: 0 }
+    pv: { type: 'number', default: 0 },
+    like: { type: 'number', default: 0 },
 })
 exports.Article.index({ author: 1, _id: -1 }).exec()// 按创建时间降序查看用户的文章列表

@@ -90,7 +90,7 @@ class RegistrationForm extends Component{
             //     loading: false,
             // }));
             this.setState({
-                imageUrl: info.file.response.imgUrl,
+                imageUrl: baseURL+info.file.response.imgUrl,
                 loading: false,
             })
         }
